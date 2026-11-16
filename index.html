@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ratatoskr — a personal assistant for your own PC</title>
+<meta name="description" content="Ratatoskr is a personal voice assistant that runs on your own Windows PC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root { --teal:#2fd2cd; --teal2:#8ff0ec; --gold:#f0c77c; --goldt:#f0e2bd; --text:#e8f1f6; --muted:#a9bccb; --bg:#060b13; }
+  * { box-sizing: border-box; }
+  body { margin:0; background: radial-gradient(1100px 600px at 70% -10%, rgba(47,210,205,.12), transparent 60%),
+         radial-gradient(900px 600px at 0% 100%, rgba(219,170,89,.08), transparent 60%), var(--bg);
+         color:var(--text); font:16px/1.6 "Segoe UI", Inter, system-ui, -apple-system, sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 56px 22px 40px; }
+  .kicker { font: 600 13px/1 inherit; letter-spacing:.24em; color:var(--teal2); display:flex; align-items:center; gap:10px; text-transform:uppercase; }
+  .kicker i { width:26px; height:1px; background:var(--teal2); display:inline-block; }
+  h1 { font: 600 clamp(36px, 7vw, 54px)/1.1 "Cinzel", Georgia, serif; letter-spacing:.06em; color:var(--goldt);
+       text-shadow:0 0 18px rgba(219,170,89,.45); margin:10px 0 8px; }
+  .lead { font-size:18px; color:#c9d6e0; max-width:640px; }
+  h2 { font: 700 14px/1.2 inherit; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); margin:0 0 10px; }
+  .card { background: rgba(6,14,26,.88); border:1px solid rgba(64,224,230,.32); border-radius:14px; padding:20px 22px; margin:18px 0;
+          box-shadow: inset 0 0 24px rgba(47,210,205,.05), 0 10px 30px rgba(0,0,0,.35); }
+  ul { margin:0; padding-left:20px; } li { margin:4px 0; }
+  a { color:var(--teal2); } a:hover { color:#c8fbf9; }
+  footer { max-width:820px; margin:0 auto; padding: 10px 22px 40px; color:var(--muted); font-size:14px; display:flex; gap:18px; flex-wrap:wrap; }
+</style>
+</head>
+<body>
+<main>
+  <div class="kicker"><i></i>The World Tree<i></i></div>
+  <h1>Ratatoskr</h1>
+  <p class="lead">A personal voice assistant that runs on your own Windows PC. In Norse myth, Ratatoskr is the squirrel who carries
+  messages up and down Yggdrasil, the world tree. This Ratatoskr carries messages between you, your PC and your phone.</p>
+
+  <section class="card">
+    <h2>What it does</h2>
+    <ul>
+      <li>Answers questions by voice ("Hey Ratatoskr…") or by typing, using Anthropic's Claude.</li>
+      <li>Reminders, timers, lists, goals, people to keep in touch with, health and medication notes.</li>
+      <li>Optionally connects to <strong>Google Calendar</strong>, so you can ask what's on, add events, and move or cancel them.</li>
+      <li>Optionally reads and helps you reply to your email. Nothing is ever sent without your OK.</li>
+      <li>An optional phone app that talks to your own PC over your private network.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Google Calendar</h2>
+    <p>If you choose to connect Google Calendar, Ratatoskr asks Google for permission to see and edit the events in your calendars.
+    It uses that permission only to show your events, to add, move or cancel events when you ask, and to remind you about them.
+    Your sign-in is kept on your own PC. You can disconnect at any time in Ratatoskr's Settings, or at
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+    <p>Full details: <a href="privacy.html">Privacy policy</a>.</p>
+  </section>
+
+  <section class="card">
+    <h2>Who it's for</h2>
+    <p>Ratatoskr is a personal, non-commercial project shared with friends. It isn't sold and has no accounts, ads or servers of its own.</p>
+  </section>
+</main>
+<footer>
+  <a href="privacy.html">Privacy policy</a>
+  <a href="terms.html">Terms of use</a>
+  <span>Contact: [YOUR SUPPORT EMAIL]</span>
+</footer>
+</body>
+</html>
